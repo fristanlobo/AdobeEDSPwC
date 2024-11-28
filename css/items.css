@@ -1,0 +1,74 @@
+
+.items .sort {
+  margin-bottom: 20px;
+}
+
+.items .item-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.items .item {
+  padding: 10px;
+  text-align: center;
+  width: 150px;
+}
+
+.sort-results {
+  display: flex;
+  justify-content:space-between;
+}
+
+/* Adjust the item image to have a fixed size and background */
+.item {
+  padding: 10px;
+  text-align: center;
+  width: 330px;  /* You can adjust the width as per your design */
+  background-color: #f5f5f5;  /* Light grey background */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item img {
+  max-width: 100%;
+  height: 200px; /* Set a fixed height for all images */
+  object-fit: cover; /* Ensures the image covers the space without distorting */
+  background-color: #f5f5f5; /* Light grey background for the image */
+  border-radius: 5px;  /* Optional: adds rounded corners to images */
+  margin-bottom: 10px; /* Adds space between image and text */
+}
+
+.item-title {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  margin: 5px 0;
+}
+
+.item-price {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.item-action {
+  margin-top: auto; /* Pushes the button to the bottom of the card */
+}
+
+.wishlist-button {
+  background: transparent;
+  border: 2px solid #000;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #007bff;
+  font-size: 14px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.wishlist-button:hover {
+  background-color: #fff;
+  color: white;
+}

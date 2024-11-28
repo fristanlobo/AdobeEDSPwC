@@ -1,0 +1,61 @@
+.banner {
+  position: relative;
+  background-color: #f4f4f4; /* Adjust background color */
+  height: 353px; /* Fixed height */
+  width: 555px; /* Fixed width */
+  display: flex;
+  align-items: flex-start; /* Align content to the top */
+  justify-content: flex-start; /* Align content to the extreme left */
+}
+
+.banner-box {
+  background-color: #1B252C; /* Black background */
+  height: 100%; /* Full height of the banner */
+  width: 100%; /* Full width of the banner */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: white; /* White text */
+  padding: 0; /* No padding */
+  box-sizing: border-box;
+}
+
+.banner-title {
+  font-size: 48px; /* Adjust size as needed */
+  font-weight: bold;
+  margin: 0;
+  line-height: 1.2; /* Adjust spacing between lines */
+  text-align: center;
+}
+
+.banner-line {
+  width: 120px; /* Width matches "Outerwear" */
+  height: 5px; /* Line thickness */
+  background-color: #007bff; /* Blue color */
+  margin-top: 10px; /* Space below text */
+  border: none;
+  align-self: center; /* Center the line inside the box */
+}
+
+.content {
+  display: flex; /* Use flexbox for horizontal layout */
+  align-items: flex-start; /* Align items to the top */
+  justify-content: flex-start; /* Place items next to each other */
+  gap: 20px; /* Optional: Space between sidebar and items */
+}
+
+.sidebar {
+  width: 250px; /* Fixed width for the sidebar */
+  background-color: #f9f9f9; /* Optional: Background color */
+  padding: 10px; /* Add padding inside the sidebar */
+  box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+.items {
+  flex: 1; /* Take the remaining available space */
+  background-color: #fff; /* Optional: Background color */
+  padding: 10px; /* Add padding inside the items section */
+  box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
