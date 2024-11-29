@@ -72,3 +72,30 @@
   background-color: #fff;
   color: white;
 }
+.pagination {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  gap: 10px; 
+  margin: 15px 0;
+  padding: 15px 0; 
+  font-family: 'Muli', sans-serif;
+  font-size: 16px;
+  color: #172026; 
+}
+
+.page-number,
+.page-arrow {
+  text-decoration: none;
+  color: #172026; 
+  cursor: pointer; 
+}
+.page-number:hover {
+  color: #545D63; 
+}
+
+.page-number.active {
+  text-decoration: underline; 
+  font-weight: regular; 
+  color: #172026; 
+}
