@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/sidebar.css" />
     <link rel="stylesheet" href="./css/items.css" />
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/footer.css" /> <!-- Link to the footer.css -->
 </head>
 
 <body>
@@ -19,14 +20,20 @@
 
         <div class="banner">
             <div class="banner-box">
-                <h2 class="banner-title">Men's</h2>
-                <h2 class="banner-title">Outerwear</h2>
-                <hr class="banner-line" />
+              <h2 class="banner-title">Men's</h2>
+              <h2 class="banner-title">Outerwear</h2>
+              <hr class="banner-line" />
             </div>
-        </div>
-        
-
-        <div class="content">
+            <div class="banner-image-container">
+              <img
+                class="banner-jeans-image"
+                src="../../assets/Images/boy-tear-jeans.jpg"
+                alt="Jeans Image"
+              />
+            </div>
+          </div>
+          
+         <div class="content">
             <!-- Sidebar -->
             <div class="sidebar" id="sidebar"></div>
 
@@ -34,6 +41,9 @@
             <div class="items" id="items"></div>
         </div>
     </div>
+
+    <!-- Load footer -->
+    <div id="footer"></div>
 
     <script>
         // Load header
@@ -54,6 +64,11 @@
                 fetchProducts(); // Call the function to fetch products
             });
 
+        // Load footer
+        fetch('./components/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+
         // Fetch data from Fake Store API and render it
         const fetchProducts = async () => {
             const grid = document.getElementById("item-grid");
@@ -71,8 +86,10 @@
 
                 const products = await response.json();
                 console.log("Products fetched successfully:", products);
+
                 // Update the results count
                 resultsCount.innerText = `${products.length} Results`;
+
                 // Render the products
                 grid.innerHTML = products
                     .map(
@@ -84,8 +101,7 @@
             <div class="item-action">
               <button class="wishlist-button">❤</button>
             </div>
-          </div>
-          `
+          </div>`
                     )
                     .join("");
             } catch (error) {
@@ -93,8 +109,6 @@
                 resultsCount.innerText = "Failed to load products.";
             }
         };
-
-        
     </script>
 </body>
 

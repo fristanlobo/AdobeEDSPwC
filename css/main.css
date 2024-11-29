@@ -2,21 +2,18 @@
   position: relative;
   background-color: #f4f4f4;
   height: 353px;
-  width: 450px;
+  width: 100%; /* Full-width container */
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
 }
 
 .banner-box {
-  background-color: #1B252C;
+  background-color: #1b252c;
   height: 100%;
-  width: 100%;
+  width: 50%; /* Occupy 50% of the width */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: relative;
   color: white;
   padding: 0;
   box-sizing: border-box;
@@ -36,8 +33,24 @@
   background-color: #007bff;
   margin-top: 10px;
   border: none;
-  align-self: center;
 }
+
+.banner-image-container {
+  height: 100%; /* Full height of the banner */
+  width: 50%; /* Occupy the remaining 50% of the width */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Ensure the image doesn't overflow */
+}
+
+.banner-jeans-image {
+  height: 100%; /* Fill the full height of the container */
+  width: 100%; /* Make the image take up the full width of the container */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+
 
 .content {
   display: flex;
