@@ -2,6 +2,10 @@
 .footer {
     padding: 40px 20px;
     font-family: Arial, sans-serif;
+    padding-left: 50px; /* Left padding */
+    padding-right: 50px; /* Right padding */
+    margin-top: 100px; /* Space above the footer */
+    border-top: 1px solid #d3d3d3; /* Line above the footer */
 }
 
 .footer-container {
@@ -16,8 +20,9 @@
 }
 
 .footer-section h3 {
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 16px;
+    font-weight: 600; /* semi-bold */
+    color: #172026;
 }
 
 .footer-section ul {
@@ -27,6 +32,9 @@
 
 .footer-section ul li {
     margin: 10px 0;
+    font-size: 16px;
+    font-weight: normal; /* regular */
+    color: #545D63;
 }
 
 .footer-section a {
@@ -43,10 +51,27 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 30px;
+    border-top: 1px solid #d3d3d3; /* Line between footer container and footer bottom */
+    padding-top: 20px;
 }
 
 .footer-bottom-left {
     flex: 1;
+}
+
+.venia-logo {
+    font-weight: bold;
+    font-size: 18px;
+    color: #172026;
+}
+
+.footer-bottom-center {
+    flex: 2;
+    text-align: center;
+}
+
+.footer-bottom-center p {
+    margin: 0;
 }
 
 .footer-bottom-right {
