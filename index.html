@@ -71,10 +71,8 @@
 
                 const products = await response.json();
                 console.log("Products fetched successfully:", products);
-
                 // Update the results count
                 resultsCount.innerText = `${products.length} Results`;
-
                 // Render the products
                 grid.innerHTML = products
                     .map(

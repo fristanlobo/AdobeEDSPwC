@@ -1,61 +1,139 @@
 .banner {
   position: relative;
-  background-color: #f4f4f4; /* Adjust background color */
-  height: 353px; /* Fixed height */
-  width: 555px; /* Fixed width */
+  background-color: #f4f4f4;
+  height: 353px;
+  width: 450px;
   display: flex;
-  align-items: flex-start; /* Align content to the top */
-  justify-content: flex-start; /* Align content to the extreme left */
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 .banner-box {
-  background-color: #1B252C; /* Black background */
-  height: 100%; /* Full height of the banner */
-  width: 100%; /* Full width of the banner */
+  background-color: #1B252C;
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   position: relative;
-  color: white; /* White text */
-  padding: 0; /* No padding */
+  color: white;
+  padding: 0;
   box-sizing: border-box;
 }
 
 .banner-title {
-  font-size: 48px; /* Adjust size as needed */
+  font-size: 48px;
   font-weight: bold;
   margin: 0;
-  line-height: 1.2; /* Adjust spacing between lines */
+  line-height: 1.2;
   text-align: center;
 }
 
 .banner-line {
-  width: 120px; /* Width matches "Outerwear" */
-  height: 5px; /* Line thickness */
-  background-color: #007bff; /* Blue color */
-  margin-top: 10px; /* Space below text */
+  width: 120px;
+  height: 5px;
+  background-color: #007bff;
+  margin-top: 10px;
   border: none;
-  align-self: center; /* Center the line inside the box */
+  align-self: center;
 }
 
 .content {
-  display: flex; /* Use flexbox for horizontal layout */
-  align-items: flex-start; /* Align items to the top */
-  justify-content: flex-start; /* Place items next to each other */
-  gap: 20px; /* Optional: Space between sidebar and items */
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 20px;
 }
 
 .sidebar {
-  width: 250px; /* Fixed width for the sidebar */
-  background-color: #f9f9f9; /* Optional: Background color */
-  padding: 10px; /* Add padding inside the sidebar */
-  box-sizing: border-box; /* Ensure padding doesn't affect width */
+  width: 250px;
+  background-color: #f9f9f9;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 .items {
-  flex: 1; /* Take the remaining available space */
-  background-color: #fff; /* Optional: Background color */
-  padding: 10px; /* Add padding inside the items section */
-  box-sizing: border-box; /* Ensure padding doesn't affect width */
+  flex: 1;
+  background-color: #fff;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.wishlist-icon {
+  height: 24px;
+  width: 24px,
+}
+
+/* Breakpoints */
+/* Mobile: 320px */
+@media (max-width: 480px) {
+  .banner-title {
+    font-size: 1.5rem;
+  }
+
+  .content {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+}
+
+/* Tablet: 768px */
+@media (min-width: 481px) and (max-width: 768px) {
+  .banner-title {
+    font-size: 2rem;
+  }
+
+  .content {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .sidebar {
+    width: 200px;
+  }
+}
+
+/* Desktop Small: 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .banner-title {
+    font-size: 2.5rem;
+  }
+}
+
+/* Desktop Medium: 1280px */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .banner-title {
+    font-size: 3rem;
+  }
+
+  .content {
+    gap: 30px;
+  }
+}
+
+/* Desktop Large: 1440px */
+@media (min-width: 1281px) and (max-width: 1440px) {
+  .banner-title {
+    font-size: 3.5rem;
+  }
+
+  .sidebar {
+    width: 250px;
+  }
+}
+
+/* Desktop X-Large: 1920px */
+@media (min-width: 1441px) {
+  .banner-title {
+    font-size: 4rem;
+  }
+
+  .content {
+    gap: 40px;
+  }
 }

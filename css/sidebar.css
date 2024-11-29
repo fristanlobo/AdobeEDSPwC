@@ -1,8 +1,9 @@
 .sidebar {
   font-family: Arial, sans-serif;
-  width: 80%; /* Or set a fixed width, e.g., 300px */
-  box-sizing: border-box; /* Ensures padding doesn't affect the total width */
-  display: block; /* Ensures the sidebar remains in a block layout */
+  width: 80%; 
+  box-sizing: border-box; 
+  display: block; 
+  margin-left: 10%;
 }
 
 .breadcrumbs {
